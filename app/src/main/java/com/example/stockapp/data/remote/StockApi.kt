@@ -21,11 +21,11 @@ interface StockApi {
     @GET("query?function=OVERVIEW")
     suspend fun getCompanyInfo(
         @Query("symbol") symbol: String,
-        @Query("apiKey") apiKey: String = API_KEY
+        @Query("apikey") apiKey: String = API_KEY
     ): CompanyInfoDto
 
     companion object {
-        const val API_KEY = ""
+        const val API_KEY = "Put your key there"
         const val BASE_URL = "https://alphavantage.co"
     }
 }

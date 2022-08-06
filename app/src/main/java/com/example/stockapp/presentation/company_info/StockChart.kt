@@ -16,8 +16,8 @@ import kotlin.math.roundToInt
 
 @Composable
 fun StockChart(
-    infos: List<IntradayInfoModel> = emptyList(),
     modifier: Modifier = Modifier,
+    infos: List<IntradayInfoModel> = emptyList(),
     graphColor: Color = Color.Green
 ) {
     val spacing = 100f
